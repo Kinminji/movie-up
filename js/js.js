@@ -10,20 +10,29 @@ $(function(){
     });
 });
 
-$grid.masonry()
-  .append( elem )
-  .masonry( 'appended', elem )
-  // layout
-  .masonry();
-  // vanilla JS
-var msnry = new Masonry( '.grid', {...});
-gridElement.appendChild( elem );
-msnry.appended( elem );
-msnry.layout();
-var $grid = $('.grid').masonry({
-    columnWidth: 80
+// $grid.masonry()
+//   .append( elem )
+//   .masonry( 'appended', elem )
+//   // layout
+//   .masonry();
+//   // vanilla JS
+// var msnry = new Masonry( '.grid', {...});
+// gridElement.appendChild( elem );
+// msnry.appended( elem );
+// msnry.layout();
+// var $grid = $('.grid').masonry({
+//     columnWidth: 80
+//   });
+//   // jQuery
+// var elems = $grid.masonry('getItemElements')
+// // vanilla JS
+// var elems = msnry.getItemElements()
+
+
+$(function(){
+  $('.grid').masonry({
+      columnWidth: 200,
+      itemSelector: '.grid-item',
+      gutter: 10,
   });
-  // jQuery
-var elems = $grid.masonry('getItemElements')
-// vanilla JS
-var elems = msnry.getItemElements()
+});
