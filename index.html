@@ -10,6 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
 </head>
 <body>
         <!-- section01 -->
@@ -88,7 +94,11 @@
                         <h1 class="white text-center sec03-main-txt">예고영상</h1>
                     </div>
                     <div class="col-sm-12 trailer text-center">
-                        <iframe width="80%" height="600" src="https://www.youtube.com/embed/ORFWdXl_zJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-bg">
+                            <video controls autoplay muted poster="images/main.jpg" id="video">
+                                <source src="video/Disney Pixar's Up - Official Trailer.mp4">
+                            </video>
+                        </div>
                     </div>
                     <div class="col-sm-12 text-center sec03-intro">
                         <h1>한방울 눈물과 한바탕 웃음! 마음 속에 담고 싶은 단 하나의 걸작</h1>
@@ -102,24 +112,66 @@
                     <div class="col-sm-4 sec03-button">
                         <button class="face-button">
                             <img src="img/facebook.png" alt="">
-                            <p class="white flex">페이스북 공유</p>
+                            <a href="#" class="white flex">페이스북 공유</a>
                         </button>
                     </div>
                     <div class="col-sm-4 sec03-button">
                         <button class="twi-button">
                             <img src="img/twitter.png" alt="">
-                            <p class="white flex">트위처 공유</p>
+                            <a href="#" class="white flex">트위터 공유</a>
                         </button>
                     </div>
                     <div class="col-sm-4 sec03-button">
                         <button class="insta-button">
                             <img src="img/instagram.png" alt="">
-                            <p class="white flex">인스타그램 공유</p>
+                            <a href="#" class="white flex">인스타그램 공유</a>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <section id="section04">
+            <div class="container section04-bg">
+                <div class="row">
+                    <div class="col-sm-12 sec04-padding">
+                        <h1 class="text-center sec03-main-txt">스틸컷</h1>
+                    </div>
+                    <div class="col-sm-12 trailer2">
+                        <div class="grid">
+                            <div class="griditem gt1">
+                                <img src="img/swiper01.jpg" alt="">
+                            </div>
+                            <div class="griditem gt2">
+                                <img src="img/swiper02.jpg" alt="">
+                            </div>
+                            <div class="griditem gt3">
+                                <img src="img/swiper03.jpg" alt="">
+                            </div>
+                            <div class="griditem gt4">
+                                <img src="img/swiper04.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section05"> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 sec05-title">
+                        <div class="sec05-title-txt  text-center">
+                            <h1 class="frist">잠깐!</h1>
+                            <h2>이벤트 참여하고</h2>
+                            <h1 class="second">선물</h1>
+                            <h2>받아가자!!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- section03 end -->
+        <script src="js/js.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
 </body>
 </html>
